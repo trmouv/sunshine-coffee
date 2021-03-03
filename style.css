@@ -513,7 +513,7 @@ footer a:hover{
 @media (max-width: 639px) {
     .xs-flex{
         flex-direction: column;
-        gap: 1em;
+        gap: 2rem;
     }
     .xs-flex-w{
         width: 100%;
