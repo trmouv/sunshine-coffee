@@ -1,13 +1,161 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="h-full">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/sunshine_coffee_logo_transparent.png" />
+    <title>Sunshine Coffee</title>
+    <meta name="description" content="Profitez de l'instant présent, le temps d'un café">
 </head>
+
 <body>
-	<h1>Pause café avec Sunshine Coffee</h1>
-	<h2>Salut à vous !</h2>
-	<p>Prenez le temps d'une pause café détente chez Sunshine Coffee</p>
-	<a href="" ></a>
+    <header class="header">
+        <a href="" class="brand-logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience gustative</a></li>
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#shop">Coffee Shop</a></li>
+          <li><a href="#store">Où nous trouver</a></li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="container xl h-75 mx-auto flex justify-end">
+            <div class="hero-heading self-center">
+                <h1 class="text-4xl">Passez un moment chaleureux</h1>
+                <p>Vous allez aimer votre café autant qu'un temps ensoleillé</p>
+                <button class="btn-color py-2 px-6 rounded-2xl">Réserver</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-container" id="about">
+        <div class="container xl mx-auto">
+            <div class="flex xs-flex sm:flex-col lg:flex-row p-12 self-center">
+                <div class="relative w-6/12 h-50vh sm:self-center">
+                    <div id="img-1"></div>
+                    <div id="img-2" class="absolute left-36 top-32"></div>
+                </div>
+                <div class="heading lg:w-6/12 sm:w-full xs-flex-w">
+                    <div class="lg:w-3/4 xs-flex-w">
+                        <h2 class="mb-4">À propos</h2>
+                        <p class="mb-4">Une expérience savoureuse</p>
+                        <p class="mb-4">Reprenez de l'énergie avec goût et caractère,<br/>savourez votre moment sur des notes torréfiées.</p>
+                        <p>Rencontrez une équipe enthousiaste, professionnelle et passionnée du bon goût.<br/>
+                        Sunshine Coffee vous propose une gamme élargie de boissons délicieusement préparées sur place.<br/>
+                        Choisissez-la chaude ou froide, avec ou sans sucre ajouté, allongée ou corsée et avec ou sans arôme, il y'en aura pour tous les goûts !</p>
+                        <div id="img-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience-container" id="experience">
+        <div class="container xl mx-auto flex sm:flex-col lg:flex-row xs-flex p-12">
+            <div class="heading">
+                <div>
+                    <h2 class="mb-4">Expérience gustative</h2>
+                    <p class="mb-4">Qualité garantie</p>
+                    <p class="mb-4">Du grain à la tasse, une sélection rigoureuse</p>
+                    <p>Goûtez aux grands crus: Choisissez le 100% pur Arabica pour sa douceur en bouche et ses arômes très fins ou le 100% Robusta, plus puissant, aux arômes plus corsés.</p>
+                    <div class="box mt-8 w-100 grid sm:grid-cols-4 gap-4 xs-grid text-center">
+                        <div class="box-col"><div class="box-icon"><img src="img/icons8-nourriture-naturelle-64.png" height="64px" width="64px"></div><h3>Café 100%<br/>naturel</h3></div>
+                        <div class="box-col"><div class="box-icon"><img src="img/icons8-best-seller-64.png" height="64px" width="64px"></div><h3>Grains de qualité<br/>supérieure</h3></div>
+                        <div class="box-col"><div class="box-icon"><img src="img/icons8-accueil-64.png" height="64px" width="64px"></div><h3>Préparé<br/>sur place</h3></div>
+                        <div class="box-col"><div class="box-icon"><img src="img/icons8-café-64.png" height="64px" width="64px"></div><h3>Expérience<br/>gustative garantie</h3></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="img-4"></div>
+            </div>
+        </div>
+    </section>
+    <section class="card-container relative" id="carte">
+        <div class="container xl xs-padding sm:px-4 p-12 mx-auto relative">
+            
+            <div id="img-5"></div>
+            <div id="img-6"></div>
+            <div id="img-7"></div>
+            <div class="card xs-padding-x px-10 py-16">
+                <h2 class="text-center">La carte</h2>
+                <div class="box mt-8 flex justify-evenly text-center">
+                    <div class="box-col"><div class="card-icon" id="coffee-icon"></div><h3>Café</h3></div>
+                    <div class="box-col"><div class="card-icon" id="drink-icon"></div><h3>Boissons</h3></div>
+                    <div class="box-col"><div class="card-icon" id="cake-icon"></div><h3>Pâtisserie</h3></div>
+                </div>
+                <div class="choice-boxes my-8 w-full flex gap-4 xs-flex lg:flex-row">
+                    <div class="choice-col lg:w-6/12 xs-flex-w">
+                        <div class="choice-row inline-flex"><div class="card-icon flex-none" id="americano"></div><div class="coffee-name"><h3>Americano</h3><p>Un café allongé avec une fine couche de mousse</p></div></div>
+                        <div class="choice-row inline-flex"><div class="card-icon flex-none" id="cappuccino"></div><div class="coffee-name"><h3>Cappuccino</h3><p>Un café et une touche de lait, coiffé d'une mousse gourmande</p></div></div>
+                        <div class="choice-row inline-flex"><div class="card-icon flex-none" id="latte"></div><div class="coffee-name"><h3>Latte</h3><p>Un café adouci au lait, recouvert d’une mousse gourmande</p></div></div>
+                    </div>
+                    <div class="choice-col lg:w-6/12 xs-flex-w">
+                        <div class="choice-row inline-flex"><div class="card-icon flex-none" id="flat-white"></div><div class="coffee-name"><h3>Flat White</h3><p>Un café adouci au lait, recouvert d’une mousse gourmande</p></div></div>
+                        <div class="choice-row inline-flex"><div class="card-icon flex-none" id="lungo"></div><div class="coffee-name"><h3>Café Lungo</h3><p>Un café adouci au lait, recouvert d’une mousse gourmande</p></div></div>
+                        <div class="choice-row inline-flex"><div class="card-icon flex-none" id="expresso"></div><div class="coffee-name"><h3>Café Expresso</h3><p>Un café adouci au lait, recouvert d’une mousse gourmande</p></div></div>
+                    </div>
+                </div>
+                <h2 id="shop">Coffee Shop</h2>
+                <p class="color553928">Découvrez les lieux</p>
+                <div class="img-container img-container-xs grid grid-cols-6 grid-rows-5 gap-8 w-full h-75">
+                    <div class="col-start-1 col-end-3 row-start-1 row-end-3 rounded-2xl" id="img-8"></div>
+                    <div class="col-start-3 col-end-5 row-start-1 row-end-4 rounded-2xl" id="img-9"></div>
+                    <div class="col-start-5 col-end-7 row-start-1 row-end-3 rounded-2xl" id="img-10"></div>
+                    <div class="col-start-1 col-end-3 row-start-3 row-end-6 rounded-2xl" id="img-11"></div>
+                    <div class="col-start-3 col-end-5 row-start-4 row-end-6 rounded-2xl" id="img-12"></div>
+                    <div class="col-start-5 col-end-7 row-start-3 row-end-6 rounded-2xl" id="img-13"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="adress" id="store">
+        <div class="container xl p-12 mx-auto relative flex xs-flex sm:flex-col lg:flex-row w-full h-2/4 gap-8 items-center">
+            <div class="w-6/12 xs-flex-w sm:w-full">
+                <h2 class="mb-4">Où nous trouver</h2>
+                <p class="mb-4">Faites une pause café chez Sunshine Coffee</p>
+                <div class="adress-map xs-flex-w sm:w-full"></div>
+            </div>
+            <div class="w-6/12 xs-flex-w"><img src="img/coffee-cup-fond-min.jpg"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container xl p-12 mx-auto flex xs-flex sm:flex-col-reverse xs-flex-col-reverse md:flex-row items-center justify-between w-full gap-8">
+            <div class="copyright">© Thomas Rivière<br/>Création originale by <a href="https://trmouv.fr" alt="Site web TR Mouv" target="_blank">TR Mouv</a></div>
+            <div class="social-icons flex">
+                <img src="img/icon-facebook.png">
+                <img src="img/icon-instagram.png">
+                <img src="img/icon-twitter.png">
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="scrollTotop" title="Go to top">▲</button>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("scrollTotop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
-</html>Site 
+</html>
