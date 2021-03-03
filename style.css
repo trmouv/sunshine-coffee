@@ -16,6 +16,12 @@ section{
     width: 100%;
 }
 
+.reduce-opacity{
+    background-color: #553928de;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
 .header ul {
 list-style: none;
 overflow: hidden;

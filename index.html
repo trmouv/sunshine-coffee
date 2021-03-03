@@ -168,10 +168,12 @@ $(function(){
     if ( scroll >= shrinkHeader ) {
         $('.brand-logo').addClass('smaller');
         $('.menu').addClass('menu-small');
+        $('.header').addClass('reduce-opacity');
     }
     else {
         $('.brand-logo').removeClass('smaller');
         $('.menu').removeClass('menu-small');
+        $('.header').removeClass('reduce-opacity');
     }
 });
 function getCurrentScroll() {
