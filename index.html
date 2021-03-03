@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="" class="brand-logo"></a>
+    <header class="header" id="main-menu">
+        <div class="brand-logo"></div>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
@@ -136,26 +136,48 @@
         </div>
     </footer>
     <button onclick="topFunction()" id="scrollTotop" title="Go to top">▲</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-    //Get the button
-    var mybutton = document.getElementById("scrollTotop");
-    
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-        mybutton.style.display = "block";
-        } else {
-        mybutton.style.display = "none";
-        }
+//Get the button
+var mybutton = document.getElementById("scrollTotop");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
     }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// Réduire taille Header au scroll
+$(function(){
+ //the shrinkHeader variable is where you tell the scroll effect to start.
+ var shrinkHeader = 70;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+    if ( scroll >= shrinkHeader ) {
+        $('.brand-logo').addClass('smaller');
+        $('.menu').addClass('menu-small');
     }
+    else {
+        $('.brand-logo').removeClass('smaller');
+        $('.menu').removeClass('menu-small');
+    }
+});
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
 </script>
 </body>
 </html>
