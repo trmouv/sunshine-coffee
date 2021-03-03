@@ -536,10 +536,10 @@ footer a:hover{
         width: 25rem;
     }
     #img-5{
-        height: 11rem;
-        width: 11rem;
+        height: 10rem;
+        width: 10rem;
         position: absolute;
-        right: 1rem;
+        right: 5rem;
         top: 7rem;
     }
     #img-6{
@@ -550,8 +550,8 @@ footer a:hover{
         top: 8rem;
     }
     #img-7{
-        height: 18rem;
-        width: 18rem;
+        height: 15rem;
+        width: 15rem;
         position: absolute;
         top: 0rem;
         left: -2rem;
